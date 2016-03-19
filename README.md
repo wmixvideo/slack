@@ -10,7 +10,9 @@ Sistema para integracao com o sistema de mensageria Slack.
 ```
 try {
     //alterar para o seu webhook
-    new Slack("https://hooks.slack.com/services/XXX/XXX/XXXXXX").text("Texto padrao").send();
+    new Slack("https://hooks.slack.com/services/XXX/XXX/XXXXXX")
+        .text("Texto padrao")
+        .send();
 } catch (Exception e) {
     e.printStackTrace();
 }
@@ -20,7 +22,10 @@ try {
 ```
 try {
     //alterar para o seu webhook
-    new Slack("https://hooks.slack.com/services/XXX/XXX/XXXXXX").channel("teste").text("Texto para um determinado canal").send();
+    new Slack("https://hooks.slack.com/services/XXX/XXX/XXXXXX")
+        .channel("teste")
+        .text("Texto para um determinado canal")
+        .send();
 } catch (Exception e) {
     e.printStackTrace();
 }
@@ -30,7 +35,10 @@ try {
 ```
 try {
     //alterar para o seu webhook
-    new Slack("https://hooks.slack.com/services/XXX/XXX/XXXXXX").user("teste").text("Texto para um determinado usuario").send();
+    new Slack("https://hooks.slack.com/services/XXX/XXX/XXXXXX")
+        .user("teste")
+        .text("Texto para um determinado usuario")
+        .send();
 } catch (Exception e) {
     e.printStackTrace();
 }
