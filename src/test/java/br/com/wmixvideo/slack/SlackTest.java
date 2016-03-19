@@ -27,6 +27,11 @@ public class SlackTest {
         Assert.assertEquals("{\"channel\":\"@diego\", \"text\":\"Hello world\"}", new Slack(null).user("diego").text("Hello world").toPayload());
     }
 
+    @Test
+    public void mensagemDeUsuarioPayload() {
+        Assert.assertEquals("{\"username\":\"Sistema X\", \"text\":\"Hello world\"}", new Slack(null).username("Sistema X").text("Hello world").toPayload());
+    }
+
     @Test(expected = MalformedURLException.class)
     public void retornaExcecaoAoEnviarParaEndpointVazio() throws Exception {
         new Slack("").text("teste").send();

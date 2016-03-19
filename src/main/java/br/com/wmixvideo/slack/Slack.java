@@ -41,13 +41,13 @@ public class Slack {
             payload.append(payload.length() > 0 ? ", " : "");
             payload.append(String.format("\"channel\":\"%s\"", this.channel));
         }
-        if (SlackUtils.isNotEmtpy(text)) {
-            payload.append(payload.length() > 0 ? ", " : "");
-            payload.append(String.format("\"text\":\"%s\"", this.text));
-        }
         if (SlackUtils.isNotEmtpy(username)) {
             payload.append(payload.length() > 0 ? ", " : "");
             payload.append(String.format("\"username\":\"%s\"", this.username));
+        }
+        if (SlackUtils.isNotEmtpy(text)) {
+            payload.append(payload.length() > 0 ? ", " : "");
+            payload.append(String.format("\"text\":\"%s\"", this.text));
         }
         return String.format("{%s}", payload.toString());
     }
