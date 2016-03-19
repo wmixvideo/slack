@@ -8,6 +8,7 @@ Sistema para integracao com o sistema de mensageria Slack.
 
 ### Envio de mensagem simples para o canal padrao
 ```
+//alterar para o seu webhook
 try {
     new Slack("https://hooks.slack.com/services/XXX/XXX/XXXXXX")
         .text("Texto padrao")
@@ -19,6 +20,7 @@ try {
 
 ### Envio de mensagem simples para um devido canal
 ```
+//alterar para o seu webhook
 try {
     new Slack("https://hooks.slack.com/services/XXX/XXX/XXXXXX")
         .channel("teste")
@@ -31,6 +33,7 @@ try {
 
 ### Envio de mensagem simples para um determinado usuario
 ```
+//alterar para o seu webhook
 try {
     new Slack("https://hooks.slack.com/services/XXX/XXX/XXXXXX")
         .user("teste")
