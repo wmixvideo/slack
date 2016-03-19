@@ -9,7 +9,8 @@ Sistema para integracao com o sistema de mensageria Slack.
 ### Envio de mensagem simples para o canal padrao
 ```
 try {
-    final Slack slack = new Slack("https://hooks.slack.com/services/XXX/XXX/XXXXXX");//alterar para o seu webhook
+    //alterar para o seu webhook
+    final Slack slack = new Slack("https://hooks.slack.com/services/XXX/XXX/XXXXXX");
     final SlackPayload slackPayload = new SlackPayload().text("Oi mundo");
     slack.send(slackPayload);
 } catch (Exception e) {
@@ -19,13 +20,12 @@ try {
 
 ### Envio de mensagem simples para um devido canal
 ```
-<code>
 try {
-    final Slack slack = new Slack("https://hooks.slack.com/services/XXX/XXX/XXXXXX");//alterar para o seu webhook
+    //alterar para o seu webhook
+    final Slack slack = new Slack("https://hooks.slack.com/services/XXX/XXX/XXXXXX");
     final SlackPayload slackPayload = new SlackPayload().channel("teste").text("Oi mundo");
     slack.send(slackPayload);
 } catch (Exception e) {
     e.printStackTrace();
 }
-</code>
 ```
