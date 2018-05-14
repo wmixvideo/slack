@@ -8,11 +8,13 @@
     <artifactId>slack</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <!-- Propriedades -->
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <junit.version>4.12</junit.version>
     </properties>
 
+    <!-- Dependencias -->
     <dependencies>
         <dependency>
             <scope>test</scope>
@@ -22,6 +24,19 @@
         </dependency>
     </dependencies>
 
+    <!-- Gerenciamento de distribuicoes -->
+    <distributionManagement>
+        <repository>
+            <id>maven.wmixvideo.com.br</id>
+            <url>s3://maven.wmixvideo.com.br/release</url>
+        </repository>
+        <snapshotRepository>
+            <id>maven.wmixvideo.com.br</id>
+            <url>s3://maven.wmixvideo.com.br/snapshot</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+    <!-- Build -->
     <build>
         <resources>
             <resource>
@@ -86,6 +101,13 @@
                 </configuration>
             </plugin>
         </plugins>
-    </build>
 
+        <extensions>
+            <extension>
+                <groupId>org.kuali.maven.wagons</groupId>
+                <artifactId>maven-s3-wagon</artifactId>
+                <version>1.2.1</version>
+            </extension>
+        </extensions>
+    </build>
 </project>
