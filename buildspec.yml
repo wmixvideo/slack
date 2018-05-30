@@ -28,8 +28,8 @@ phases:
 
 artifacts:
   files:
-    - *.jar
-    - *.war
+    - '*.jar'
+    - '*.war'
   discard-paths: yes
   base-directory: target
 #cache:
