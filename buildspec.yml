@@ -28,9 +28,9 @@ phases:
 
 artifacts:
   files:
-    - target/slack-1.0-SNAPSHOT.jar
+    - 'target/*.jar'
     # - location
-  discard-paths: yes
+  #discard-paths: yes
   #base-directory: target
 #cache:
   #paths:
