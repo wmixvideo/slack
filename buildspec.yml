@@ -28,10 +28,10 @@ phases:
 
 artifacts:
   files:
-    - 'target/*.jar'
-    # - location
-  #discard-paths: yes
-  #base-directory: target
+    - *.jar
+    - *.war
+  discard-paths: yes
+  base-directory: target
 #cache:
   #paths:
     # - paths
