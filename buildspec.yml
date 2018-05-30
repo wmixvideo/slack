@@ -1,0 +1,12 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo Iniciando build em `date`
+      - mvn clean package
+
+artifacts:
+  files:
+    - target/slack-1.0-SNAPSHOT.jar
+  discard-paths: yes
