@@ -1,12 +1,35 @@
-version: 0.2
+#env:
+  #variables:
+     # key: "value"
+     # key: "value"
+  #parameter-store:
+     # key: "value"
+     # key: "value"
 
 phases:
+  #install:
+    #commands:
+      # - command
+      # - command
+  #pre_build:
+    #commands:
+      # - command
+      # - command
   build:
     commands:
-      - echo Iniciando build em `date`
       - mvn clean package
+      # - command
+  #post_build:
+    #commands:
+      # - command
+      # - command
 
 artifacts:
   files:
     - target/slack-1.0-SNAPSHOT.jar
+    # - location
   discard-paths: yes
+  #base-directory: target
+#cache:
+  #paths:
+    # - paths
