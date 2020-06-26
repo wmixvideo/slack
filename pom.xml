@@ -27,13 +27,10 @@
     <!-- Gerenciamento de distribuicoes -->
     <distributionManagement>
         <repository>
-            <id>maven.wmixvideo.com.br</id>
-            <url>s3://maven.wmixvideo.com.br/release</url>
+            <id>github</id>
+            <name>GitHub Wmix Video Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/wmixvideo/slack</url>
         </repository>
-        <snapshotRepository>
-            <id>maven.wmixvideo.com.br</id>
-            <url>s3://maven.wmixvideo.com.br/snapshot</url>
-        </snapshotRepository>
     </distributionManagement>
 
     <!-- Build -->
