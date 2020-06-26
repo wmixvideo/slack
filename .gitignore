@@ -8,3 +8,8 @@
 # IDE Files #
 *.iml
 .idea
+
+# VS Code
+.classpath
+.project
+.settings
