@@ -96,18 +96,18 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>1.7</source>
-                    <target>1.7</target>
+                    <source>11</source>
+                    <target>11</target>
                 </configuration>
             </plugin>
         </plugins>
 
-        <extensions>
-            <extension>
-                <groupId>org.kuali.maven.wagons</groupId>
-                <artifactId>maven-s3-wagon</artifactId>
-                <version>1.2.1</version>
-            </extension>
-        </extensions>
+<!--        <extensions>-->
+<!--            <extension>-->
+<!--                <groupId>org.kuali.maven.wagons</groupId>-->
+<!--                <artifactId>maven-s3-wagon</artifactId>-->
+<!--                <version>1.2.1</version>-->
+<!--            </extension>-->
+<!--        </extensions>-->
     </build>
 </project>
